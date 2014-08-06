@@ -3,74 +3,64 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* custom styles */
 body {
   padding-top: 0;
   color: #000000;
-  font-family: 'Quicksand', 'Helvetica Neue', sans-serif; }
+  font-family: 'Quicksand', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased; }
 
-/*Typography */
 h1, h2, h3, h4, h5, p {
   font-family: 'Quicksand', 'Helvetica Neue', sans-serif;
-  font-weight: 300;
-  color: #777777;
-  margin-bottom: 5px;
-  margin-top: 10px; }
+  color: #777777; }
 
-.circle > .bold {
-  font-size: 1.2em;
-  font-weight: 400; }
-
-.circle > span {
-  font-size: 0.9em;
-  font-weight: 300; }
-
-/* Hero */
 .hero {
   background-color: #384150;
   height: 355px;
   padding-top: 50px; }
-
-.circle {
-  margin: 0 auto;
-  padding-top: 55px;
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  color: #384150;
-  line-height: 1em;
-  font-size: 2.5em;
-  text-align: center;
-  background: #ffffff; }
-
-.ic_socialmedia {
-  position: relative;
-  padding-top: 40px;
-  text-align: center; }
-
-.ic_socialmedia > ul {
-  list-style-type: none;
-  margin: 0 auto;
-  width: auto;
-  display: inline-block;
-  padding: 0; }
-
-.ic_socialmedia > ul > li {
-  float: left;
-  padding: 0 40px 20px 0; }
-
-.ic_socialmedia img {
-  transition: opacity .5s ease-in-out;
-  width: 60px;
-  opacity: 0.75; }
-
-.ic_socialmedia img:hover {
-  transition: opacity .7s ease-in-out;
-  opacity: 1; }
-
-.ic_socialmedia > ul > li:last-child {
-  float: left;
-  padding: 0 0 20px 0; }
+  .hero .circle {
+    height: 180px;
+    width: 180px;
+    display: table;
+    background: #ffffff;
+    border-radius: 50%;
+    margin: 0 auto; }
+    .hero .circle > * {
+      display: table-cell;
+      vertical-align: middle; }
+    .hero .circle .circle-text {
+      text-transform: uppercase;
+      font-size: 2.2em;
+      line-height: 1em;
+      color: #384150;
+      text-align: center; }
+      .hero .circle .circle-text .silva {
+        font-size: 1.3em;
+        font-weight: 400; }
+  .hero .ic_socialmedia {
+    position: relative;
+    padding-top: 1.5em;
+    text-align: center; }
+    .hero .ic_socialmedia ul {
+      list-style-type: none;
+      margin: 1em auto;
+      width: auto;
+      display: inline-block;
+      height: auto;
+      -webkit-padding-start: 0; }
+      .hero .ic_socialmedia ul li {
+        float: left;
+        padding-right: 3.5em; }
+        .hero .ic_socialmedia ul li:last-child {
+          padding-right: 0; }
+        .hero .ic_socialmedia ul li:hover {
+          cursor: pointer; }
+      .hero .ic_socialmedia ul img {
+        transition: opacity .5s ease-in-out;
+        width: 60px;
+        opacity: 0.85; }
+        .hero .ic_socialmedia ul img:hover {
+          transition: opacity .7s ease-in-out;
+          opacity: 1; }
 
 .navbar .nav {
   margin: 0;
