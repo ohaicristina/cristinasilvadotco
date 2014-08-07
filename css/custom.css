@@ -52,75 +52,53 @@ h1, h2, h3, h4, h5, p {
         padding-right: 3.5em; }
         .hero .ic_socialmedia ul li:last-child {
           padding-right: 0; }
-        .hero .ic_socialmedia ul li:hover {
-          cursor: pointer; }
       .hero .ic_socialmedia ul img {
         transition: opacity .5s ease-in-out;
         width: 60px;
         opacity: 0.85; }
         .hero .ic_socialmedia ul img:hover {
+          cursor: pointer;
           transition: opacity .7s ease-in-out;
           opacity: 1; }
-
-.navbar .nav {
-  margin: 0;
-  display: table;
-  width: 100%;
-  background-color: #384150;
-  height: 50px; }
-
-.nav li a {
-  padding: 4px 2px;
-  margin: 10px 80px 15px 80px;
-  color: #ffffff;
-  font-size: 1.4em;
-  font-weight: 300;
-  border-bottom: #525E74 4px solid; }
-
-.nav li a:hover {
-  padding: 4px 2px;
-  margin: 10px 80px 15px 80px;
-  color: #ffffff;
-  font-size: 1.4em;
-  font-weight: 300;
-  border-bottom: #DEDEDE 4px solid; }
-
-.nav li a:active {
-  padding: 4px 2px;
-  margin: 10px 80px 15px 80px;
-  color: #ffffff;
-  font-size: 1.4em;
-  font-weight: 300;
-  border-bottom: #ffffff 4px solid; }
-
-.navitem-padding {
-  padding: 10px; }
-
-li.active a {
-  padding: 4px 2px;
-  margin: 10px 80px 15px 80px;
-  color: #ffffff;
-  font-size: 1.4em;
-  font-weight: 300;
-  border-bottom: #ffffff 4px solid; }
-
-.anchor {
-  display: block;
-  height: 75px;
-  /* height as header */
-  visibility: hidden; }
 
 .navbar {
   padding: 0;
   margin-bottom: 0;
   background-image: none;
   border-radius: none;
-  box-shadow: none;
-  background-color: #384150; }
+  box-shadow: none; }
+  .navbar .nav {
+    background-color: #384150;
+    display: table;
+    height: 50px;
+    margin: 0;
+    width: 100%; }
+    .navbar .nav li a {
+      border-bottom: #525E74 3px solid;
+      color: #ffffff;
+      font-size: 1.6em;
+      font-weight: 400;
+      margin: 10px 80px 15px 80px;
+      padding: 4px 2px; }
+      .navbar .nav li a:hover {
+        border-bottom: #DEDEDE 3px solid; }
+
+.active {
+  color: #ffffff;
+  font-weight: 400; }
+  .active a {
+    border-bottom: #DEDEDE 3px solid !important; }
+
+.anchor a {
+  display: block;
+  height: 75px;
+  /* height as header */
+  visibility: hidden; }
 
 .affix {
   top: 0px;
-  z-index: 2000; }
+  z-index: 2000;
+  opacity: .95; }
 
 /* Override Bootstrap for FF */
 .nav-collapse.collapse {
