@@ -82,7 +82,7 @@
 
 .anchor a {
   display: block;
-  height: 75px;
+  height: 150px;
   /* height as header */
   visibility: hidden; }
 
@@ -95,9 +95,6 @@
   width: 100%; }
 
 .portfolio-h1 {
-  margin: 20px auto 50px;
-  padding: 5px 2px;
-  border-bottom: #E9BD8F 4px solid;
   width: 230px; }
 
 .portfolio-thumb {
@@ -172,10 +169,8 @@
         background-color: rgba(255, 255, 255, 0.2) !important; }
 
 .about-h1 {
-  margin: 20px auto 50px;
-  padding: 5px 2px;
-  border-bottom: #E9BD8F 4px solid;
-  width: 135px; }
+  width: 135px;
+  padding-top: 95px !important; }
 
 .about-h4 {
   margin-top: 0;
@@ -183,7 +178,7 @@
   line-height: 130%; }
 
 .circle-space {
-  margin-bottom: 30px; }
+  margin-bottom: 8em; }
 
 /*circle hover styles */
 .ch-circle {
@@ -274,25 +269,19 @@ a .ch-text-in h4 {
   transform: scale(1); }
 
 .contact-h1 {
-  margin: 20px auto 30px;
-  padding: 5px 2px;
-  border-bottom: #E9BD8F 4px solid;
-  width: 195px; }
+  width: 195px;
+  padding-top: 95px; }
 
-.contact-list li h3 {
-  margin-bottom: 30px; }
-
-.contact-a {
-  font-size: 1.6em;
-  font-weight: 300; }
-
-.contact-img {
-  padding: 10px 10px;
-  margin: 0 auto; }
-
-.contact-list {
-  list-style-type: none;
-  padding-top: 10px; }
+.contact-list li {
+  list-style: none; }
+  .contact-list li:last-child {
+    margin-bottom: 8em; }
+  .contact-list li a {
+    font-size: 1.6em;
+    font-weight: 500; }
+  .contact-list li img {
+    padding: 10px;
+    margin: 0 auto; }
 
 .add-padding-bottom {
   padding-bottom: 50px; }
@@ -378,14 +367,10 @@ h1, h2, h3, h4, h5, p {
 .section-row {
   height: auto; }
 
-#portfolio-row > h1 {
-  margin: 50px auto 5px; }
-
-#about-row > h1 {
-  margin: 50px auto 50px; }
-
-#contact-row > h1 {
-  margin: 50px auto 50px; }
+.section-titles, .portfolio-h1, .about-h1, .contact-h1 {
+  margin: 1em auto;
+  padding: 25px 2px 5px;
+  border-bottom: #E9BD8F 4px solid; }
 
 /*Hover Styles*/
 :focus {

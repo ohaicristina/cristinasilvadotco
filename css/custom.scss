@@ -34,18 +34,10 @@ h1, h2, h3, h4, h5, p {
   height: auto;
 }
 
-#portfolio-row > h1{
-  margin: 50px auto 5px;
-}
-
-
-#about-row > h1 {
-  margin: 50px auto 50px;
-}
-
-
-#contact-row > h1 {
-  margin: 50px auto 50px;
+.section-titles {
+  margin: 1em auto;
+  padding: 25px 2px 5px;
+  border-bottom: #E9BD8F 4px solid;
 }
 
 /*Hover Styles*/
