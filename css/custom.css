@@ -3,16 +3,6 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-body {
-  padding-top: 0;
-  color: #000000;
-  font-family: 'Quicksand', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased; }
-
-h1, h2, h3, h4, h5, p {
-  font-family: 'Quicksand', 'Helvetica Neue', sans-serif;
-  color: #777777; }
-
 .hero {
   background-color: #384150;
   height: 355px;
@@ -101,15 +91,15 @@ h1, h2, h3, h4, h5, p {
   z-index: 2000;
   opacity: .95; }
 
-/* Override Bootstrap for FF */
 .nav-collapse.collapse {
   width: 100%; }
 
-/*Sections*/
-.section-row {
-  height: auto; }
+.portfolio-h1 {
+  margin: 20px auto 50px;
+  padding: 5px 2px;
+  border-bottom: #E9BD8F 4px solid;
+  width: 230px; }
 
-/*Portfolio*/
 .portfolio-thumb {
   margin-bottom: 25px;
   max-width: 800px;
@@ -180,19 +170,6 @@ h1, h2, h3, h4, h5, p {
       font-weight: 600; }
       .portfolio-thumb .mask .view-project:hover {
         background-color: rgba(255, 255, 255, 0.2) !important; }
-
-#portfolio-row > h1 {
-  margin: 50px auto 5px; }
-
-.portfolio-h1 {
-  margin: 20px auto 50px;
-  padding: 5px 2px;
-  border-bottom: #E9BD8F 4px solid;
-  width: 230px; }
-
-/*About*/
-#about-row > h1 {
-  margin: 50px auto 50px; }
 
 .about-h1 {
   margin: 20px auto 50px;
@@ -296,11 +273,6 @@ a .ch-text-in h4 {
   opacity: 1;
   transform: scale(1); }
 
-/*end about hover styles*/
-/* Contact */
-#contact-row > h1 {
-  margin: 50px auto 50px; }
-
 .contact-h1 {
   margin: 20px auto 30px;
   padding: 5px 2px;
@@ -328,7 +300,6 @@ a .ch-text-in h4 {
 .add-padding-bottom-130 {
   padding-bottom: 130px; }
 
-/* Project Pages */
 .title-row {
   margin-top: 120px; }
 
@@ -359,18 +330,6 @@ a .ch-text-in h4 {
   border-bottom: #E9BD8F 4px solid;
   width: 300px; }
 
-/*Carousel styling for slidejs*/
-	/*.carousel-container {
-        width: auto;
-	}
-   	/* Prevent the slideshow from flashing on load */
-/*#slides {
-  display: none;
-}
-/* Show active item in the pagination */
-/*.slidesjs-pagination .active {
-  color:red;
-} */
 .carousel-control.left,
 .carousel-control.right {
   background-image: none; }
@@ -405,6 +364,28 @@ p.project_description {
 h4.project_description {
   font-size: 0.35em;
   line-height: 140%; }
+
+body {
+  padding-top: 0;
+  color: #000000;
+  font-family: 'Quicksand', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased; }
+
+h1, h2, h3, h4, h5, p {
+  font-family: 'Quicksand', 'Helvetica Neue', sans-serif;
+  color: #777777; }
+
+.section-row {
+  height: auto; }
+
+#portfolio-row > h1 {
+  margin: 50px auto 5px; }
+
+#about-row > h1 {
+  margin: 50px auto 50px; }
+
+#contact-row > h1 {
+  margin: 50px auto 50px; }
 
 /*Hover Styles*/
 :focus {

@@ -1,0 +1,81 @@
+//Project Pages
+
+.title-row {
+  margin-top: 120px;
+}
+
+.btn-default {
+  color: #525E74;
+  width: 40%;
+  margin-top: 10px;
+  font-weight: 300;
+  background: none;
+  border-radius: 4px;
+  border: 1px solid white;
+  letter-spacing: .05em;
+  box-shadow: none;
+  padding: 8px;
+}
+
+.btn-default:hover {
+  color: #333333;
+  background-color: #ebebeb;
+  border: none;
+}
+
+.btn:focus {
+  outline: none;
+  border: none;
+}
+
+.projects-h1 {
+  margin: 20px auto 50px;
+  padding: 5px 2px;
+  border-bottom: #E9BD8F 4px solid;
+  width: 300px;
+}
+
+//Carousel
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
+
+
+.ic-in-button-prev {
+  height: 18px;
+  margin: 0 15px 2px 0;
+  opacity: 0.8;
+}
+
+.ic-in-button-next {
+  height: 17px;
+  margin: 0 0 2px 15px;
+  opacity: 0.8;
+}
+.control {
+  position: absolute;
+  bottom: 30px;
+}
+
+.moreproj-thumbs {
+  margin-bottom: 50px;
+}
+
+.moreproj-thumbs img {
+  margin: 10px;
+}
+
+.fancybox img {
+  margin: 20px auto;
+}
+
+p.project_description {
+  font-size: 1.1em;
+  line-height: 160%;
+}
+
+h4.project_description {
+  font-size: 0.35em;
+  line-height: 140%;
+}
