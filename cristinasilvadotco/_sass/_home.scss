@@ -1,0 +1,20 @@
+.wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: $base-spacing;
+}
+
+.container {
+  background-color: $white;
+  box-shadow: inset 0px -16px 0px 0px rgba(151,194,254,0.79), inset 0px -6px 0px 0px #779ED4;
+  margin-top: $large-spacing;
+  max-width: $medium-screen;
+  padding: $base-spacing;
+  width: 100%;
+
+  @include media($medium-screen-up) {
+    @include padding($large-spacing ($large-spacing * 3));
+    width: 80%;
+  }
+}

@@ -1,8 +1,11 @@
 body {
+  -webkit-font-smoothing: antialiased;
+  background-color: $deep-blue;
   color: $base-font-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
+  margin: 0;
 }
 
 h1,
@@ -15,6 +18,11 @@ h6 {
   font-size: modular-scale(1);
   line-height: $heading-line-height;
   margin: 0 0 $small-spacing;
+}
+
+h3 {
+  color: $medium-gray;
+  margin-bottom: 0;
 }
 
 p {
@@ -39,4 +47,20 @@ hr {
   border-right: 0;
   border-top: 0;
   margin: $base-spacing 0;
+}
+
+.title-heading {
+  font-size: 48px;
+  letter-spacing: 0.75px;
+  margin-bottom: $smaller-spacing;
+}
+
+.secondary-heading {
+  color: $medium-gray;
+  letter-spacing: 0.2px;
+  margin-bottom: 0;
+}
+
+.large-paragraph-size {
+  font-size: 20px;
 }
