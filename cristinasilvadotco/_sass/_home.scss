@@ -6,15 +6,35 @@
 }
 
 .container {
-  background-color: $white;
-  box-shadow: inset 0px -16px 0px 0px rgba(151,194,254,0.79), inset 0px -6px 0px 0px #779ED4;
+  border-bottom-left-radius: 100px;
+  box-shadow: inset 0px -16px 0px 0px rgba($blue, 0.75), inset 0px -6px 0px 0px $blue;
+  color: white;
   margin-top: $large-spacing;
   max-width: $medium-screen;
-  padding: $base-spacing;
+  padding: $large-spacing $large-spacing ($large-spacing * 2);
   width: 100%;
 
   @include media($medium-screen-up) {
-    @include padding($large-spacing ($large-spacing * 3));
+    @include padding($large-spacing ($large-spacing * 2.5) ($large-spacing * 2));
     width: 80%;
   }
+}
+
+.overlap-hr {
+  border: 3px solid $electric-red;
+  margin: 0 0 $base-spacing -7.5rem;
+  width: 85%;
+}
+
+.now, .before-tbot {
+  margin-bottom: $large-spacing;
+}
+
+.social-cocoon {
+  margin-bottom: $base-spacing;
+}
+
+.social-butterfly {
+  display: flex;
+  justify-content: space-between;
 }

@@ -1,6 +1,6 @@
 body {
   -webkit-font-smoothing: antialiased;
-  background-color: $deep-blue;
+  background-color: darken($deep-blue, 10%);
   color: $base-font-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
@@ -22,7 +22,8 @@ h6 {
 
 h3 {
   color: $medium-gray;
-  margin-bottom: 0;
+  font-size: 1em;
+  margin-bottom: $small-spacing;
 }
 
 p {
@@ -31,6 +32,7 @@ p {
 
 a {
   color: $action-color;
+  position: relative;
   text-decoration: none;
   transition: color $base-duration $base-timing;
 
@@ -38,6 +40,22 @@ a {
   &:focus,
   &:hover {
     color: shade($action-color, 25%);
+
+    &:before {
+      transform: scaleX(1);
+      visibility: visible;
+    }
+  }
+
+  &:before {
+    @include position(absolute, null null -5px 0);
+    background-color: currentColor;
+    content: "";
+    height: 2px;
+    transform: scaleX(0);
+    transition: transform $base-duration $base-timing;
+    visibility: hidden;
+    width: 100%;
   }
 }
 
@@ -50,13 +68,14 @@ hr {
 }
 
 .title-heading {
-  font-size: 48px;
-  letter-spacing: 0.75px;
-  margin-bottom: $smaller-spacing;
+  font-size: 42px;
+  letter-spacing: 3px;
+  margin-bottom: $small-spacing;
+  font-weight: 200;
 }
 
 .secondary-heading {
-  color: $medium-gray;
+  color: rgba($white, 0.5);
   letter-spacing: 0.2px;
   margin-bottom: 0;
 }
