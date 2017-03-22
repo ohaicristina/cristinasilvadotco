@@ -2,7 +2,6 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  margin-top: $base-spacing;
 }
 
 .container {
@@ -22,7 +21,7 @@
 
 .overlap-hr {
   border: 3px solid $electric-red;
-  margin: 0 0 $base-spacing -7.5rem;
+  margin: 0 0 $large-spacing -7.5rem;
   width: 85%;
 }
 
