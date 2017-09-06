@@ -333,9 +333,9 @@ section {
     padding-left: 2em; }
     .navigation-list li:first-child {
       padding-left: 0; }
-    .navigation-list li.active {
-      font-weight: bold;
-      border-bottom: 2px solid #40A798; }
+  .navigation-list a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #40A798; }
 
 .header {
   margin-bottom: 3em; }
@@ -369,3 +369,32 @@ section {
 
 .grading-list li::before {
   content: '\1F4AF'; }
+
+.week {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 2em; }
+  .week h2 {
+    flex: 1 0 100%;
+    padding-bottom: 1em; }
+    .week h2 span {
+      font-weight: 400; }
+
+.week-card {
+  flex: 0 1 47%;
+  padding: 1em;
+  background-color: white;
+  box-shadow: 0 10px 20px rgba(240, 209, 198, 0.6); }
+  .week-card h3.label {
+    font-family: "Source Code Pro", monospace; }
+  .week-card .padded-list {
+    margin: 1em; }
+  .week-card ol {
+    font-size: 0.85em;
+    list-style-type: decimal;
+    margin-left: 1em; }
+    .week-card ol li {
+      padding-bottom: 0.5em; }
+      .week-card ol li:last-child {
+        padding-bottom: 0; }

@@ -80,11 +80,11 @@ section {
         &:first-child {
             padding-left: 0;
         }
+    }
 
-        &.active {
-            font-weight: bold;
-            border-bottom: 2px solid $teal;
-        }
+    a.active {
+        font-weight: bold;
+        border-bottom: 2px solid $teal;
     }
 }
 
@@ -132,5 +132,50 @@ section {
 .grading-list li {
     &::before {
         content: '\1F4AF';
+    }
+}
+
+.week {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 2em;
+
+    h2 {
+        flex: 1 0 100%;
+        padding-bottom: 1em;
+
+        span {
+            font-weight: 400;
+        }
+    }
+}
+
+.week-card {
+    flex: 0 1 47%;
+    padding: 1em;
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(240, 209, 198, 0.6);
+
+    h3.label {
+        font-family: $mono-font-family;
+    }
+
+    .padded-list {
+        margin: 1em;
+    }
+
+    ol {
+        font-size: 0.85em;
+        list-style-type: decimal;
+        margin-left: 1em;
+
+        li {
+            padding-bottom: 0.5em;
+
+            &:last-child {
+                padding-bottom: 0;
+            }
+        }
     }
 }
