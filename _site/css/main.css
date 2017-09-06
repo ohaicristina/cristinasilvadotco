@@ -277,38 +277,35 @@ body.teaching {
   body.teaching h3,
   body.teaching p {
     font-family: "Karla", "PT Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; }
-
-h1 {
-  font-size: 4.235em;
-  position: relative;
-  display: inline-block;
-  z-index: 1; }
-  h1::before {
-    position: absolute;
-    right: -44px;
-    bottom: 17px;
-    content: '';
-    background-color: #dfa08a;
-    width: 100%;
-    height: 6px;
-    z-index: -1;
-    opacity: 0.5; }
-
-a {
-  color: #40A798;
-  font-family: "Source Code Pro", monospace; }
-  a:hover {
-    opacity: 0.75;
-    cursor: pointer;
-    color: #40A798; }
-
-section {
-  border-bottom: 2px solid #f0d1c6;
-  padding-bottom: 1em;
-  margin-bottom: 2em; }
-  section:first-child {
-    border-bottom: 0;
-    padding-bottom: 0; }
+  body.teaching h1 {
+    font-size: 4.235em;
+    position: relative;
+    display: inline-block;
+    z-index: 1; }
+    body.teaching h1::before {
+      position: absolute;
+      right: -44px;
+      bottom: 17px;
+      content: '';
+      background-color: #dfa08a;
+      width: 100%;
+      height: 6px;
+      z-index: -1;
+      opacity: 0.5; }
+  body.teaching a {
+    color: #40A798;
+    font-family: "Source Code Pro", monospace; }
+    body.teaching a:hover {
+      opacity: 0.75;
+      cursor: pointer;
+      color: #40A798; }
+  body.teaching section {
+    border-bottom: 2px solid #f0d1c6;
+    padding-bottom: 1em;
+    margin-bottom: 2em; }
+    body.teaching section:first-child {
+      border-bottom: 0;
+      padding-bottom: 0; }
 
 .teaching-wrapper {
   margin-top: 1.5em;
