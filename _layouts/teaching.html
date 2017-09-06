@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+    {% include head.html %}
+
+    <body class="teaching">
+        <div class="teaching-wrapper">
+            <ul class="navigation-list">
+                <li {% if page.url == '/5dtools.html' %} class="active" {% endif
+                    %}><a href="/5dtools">Syllabus</a></li>
+                <li {% if page.url == '/5dtools-schedule.html' %} class="active"
+                    {% endif %}><a href="/5dtools-schedule.html">Schedule</a></li>
+                <li class="navigation-item"><a href="#">Resources</a></li>
+            </ul>
+
+            <div class="teaching-container">
+                {{ content }}
+            </div>
+        </div>
+    </body>
+</html>

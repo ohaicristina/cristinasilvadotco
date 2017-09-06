@@ -160,7 +160,6 @@ th {
 
 body {
   -webkit-font-smoothing: antialiased;
-  background-color: #28263a;
   color: #101821;
   font-family: "PT Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 1em;
@@ -229,6 +228,9 @@ hr {
 .large-paragraph-size {
   font-size: 20px; }
 
+body {
+  background-color: #28263a; }
+
 .wrapper {
   align-items: center;
   display: flex;
@@ -261,3 +263,109 @@ hr {
 .social-butterfly {
   display: flex;
   justify-content: space-between; }
+
+.social-caterpillar {
+  padding-right: 1em; }
+  .social-caterpillar:last-child {
+    padding-right: 0; }
+
+body.teaching {
+  background-color: #f8ebe6;
+  color: #476268; }
+  body.teaching h1,
+  body.teaching h2,
+  body.teaching h3,
+  body.teaching p {
+    font-family: "Karla", "PT Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; }
+
+h1 {
+  font-size: 4.235em;
+  position: relative;
+  display: inline-block;
+  z-index: 1; }
+  h1::before {
+    position: absolute;
+    right: -44px;
+    bottom: 17px;
+    content: '';
+    background-color: #dfa08a;
+    width: 100%;
+    height: 6px;
+    z-index: -1;
+    opacity: 0.5; }
+
+a {
+  color: #40A798;
+  font-family: "Source Code Pro", monospace; }
+  a:hover {
+    opacity: 0.75;
+    cursor: pointer;
+    color: #40A798; }
+
+section {
+  border-bottom: 2px solid #f0d1c6;
+  padding-bottom: 1em;
+  margin-bottom: 2em; }
+  section:first-child {
+    border-bottom: 0;
+    padding-bottom: 0; }
+
+.teaching-wrapper {
+  margin-top: 1.5em;
+  margin-left: 0.5em;
+  margin-right: 0.25em;
+  max-width: 960px; }
+  @media screen and (min-width: 640px) {
+    .teaching-wrapper {
+      margin-top: 2em;
+      margin-left: 8em; } }
+  .teaching-wrapper h4 {
+    font-weight: 400;
+    font-size: 1.1em; }
+
+.navigation-list {
+  display: flex;
+  margin-bottom: 2em; }
+  @media screen and (min-width: 640px) {
+    .navigation-list {
+      justify-content: flex-end; } }
+  .navigation-list li {
+    padding-left: 2em; }
+    .navigation-list li:first-child {
+      padding-left: 0; }
+    .navigation-list li.active {
+      font-weight: bold;
+      border-bottom: 2px solid #40A798; }
+
+.header {
+  margin-bottom: 3em; }
+
+@media screen and (min-width: 640px) {
+  .class-information {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; } }
+
+.class-information-block {
+  margin-bottom: 2em; }
+  @media screen and (min-width: 640px) {
+    .class-information-block {
+      flex: 0 1 45%;
+      margin-bottom: 0; } }
+
+.learning-list,
+.grading-list {
+  font-family: "Source Code Pro", monospace; }
+  .learning-list li,
+  .grading-list li {
+    line-height: 2;
+    margin-left: 1em; }
+    .learning-list li::before,
+    .grading-list li::before {
+      margin-right: 1em; }
+
+.learning-list li::before {
+  content: '\1F33F'; }
+
+.grading-list li::before {
+  content: '\1F4AF'; }
