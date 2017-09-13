@@ -396,3 +396,5 @@ body.teaching {
       padding-bottom: 0.5em; }
       .week-card ol li:last-child {
         padding-bottom: 0; }
+    .week-card ol:not(:last-child) {
+      margin-bottom: 1em; }
