@@ -27,13 +27,13 @@ body.teaching {
     }
 
     a {
-        color: $teal;
+        color: magenta;
         font-family: $heading-font-family;
 
         &:hover {
             opacity: 0.75;
             cursor: pointer;
-            color: $teal;
+            color: magenta;
         }
     }
 
@@ -70,6 +70,10 @@ body.teaching {
     display: flex;
     margin-bottom: 2em;
 
+    a {
+        color: magenta;
+    }
+
     @include media($medium-screen-up) {
         justify-content: flex-end;
     }
@@ -84,7 +88,7 @@ body.teaching {
 
     a.active {
         font-weight: bold;
-        border-bottom: 2px solid $teal;
+        border-bottom: 2px solid magenta;
     }
 }
 

@@ -293,12 +293,12 @@ body.teaching {
       z-index: -1;
       opacity: 0.5; }
   body.teaching a {
-    color: #40A798;
+    color: magenta;
     font-family: "Source Code Pro", monospace; }
     body.teaching a:hover {
       opacity: 0.75;
       cursor: pointer;
-      color: #40A798; }
+      color: magenta; }
   body.teaching section {
     border-bottom: 2px solid #f0d1c6;
     padding-bottom: 1em;
@@ -323,6 +323,8 @@ body.teaching {
 .navigation-list {
   display: flex;
   margin-bottom: 2em; }
+  .navigation-list a {
+    color: magenta; }
   @media screen and (min-width: 640px) {
     .navigation-list {
       justify-content: flex-end; } }
@@ -332,7 +334,7 @@ body.teaching {
       padding-left: 0; }
   .navigation-list a.active {
     font-weight: bold;
-    border-bottom: 2px solid #40A798; }
+    border-bottom: 2px solid magenta; }
 
 .header {
   margin-bottom: 3em; }
