@@ -71,7 +71,7 @@ body.teaching {
     margin-bottom: 2em;
 
     a {
-        color: magenta;
+        color: $teal !important;
     }
 
     @include media($medium-screen-up) {
@@ -88,7 +88,7 @@ body.teaching {
 
     a.active {
         font-weight: bold;
-        border-bottom: 2px solid magenta;
+        border-bottom: 2px solid $teal;
     }
 }
 

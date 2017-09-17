@@ -324,7 +324,7 @@ body.teaching {
   display: flex;
   margin-bottom: 2em; }
   .navigation-list a {
-    color: magenta; }
+    color: #40A798 !important; }
   @media screen and (min-width: 640px) {
     .navigation-list {
       justify-content: flex-end; } }
@@ -334,7 +334,7 @@ body.teaching {
       padding-left: 0; }
   .navigation-list a.active {
     font-weight: bold;
-    border-bottom: 2px solid magenta; }
+    border-bottom: 2px solid #40A798; }
 
 .header {
   margin-bottom: 3em; }
