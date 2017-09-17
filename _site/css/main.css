@@ -400,3 +400,10 @@ body.teaching {
         padding-bottom: 0; }
     .week-card ol:not(:last-child) {
       margin-bottom: 1em; }
+
+.row {
+  display: flex;
+  justify-content: space-between; }
+
+.col-2 {
+  flex: 1; }

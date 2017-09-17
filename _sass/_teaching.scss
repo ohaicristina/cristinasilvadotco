@@ -188,3 +188,12 @@ body.teaching {
         }
     }
 }
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-2 {
+    flex: 1;
+}
