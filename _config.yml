@@ -16,3 +16,4 @@ github_username:  ohaicristina
 
 # Build settings
 markdown: kramdown
+exclude: ["CNAME", "README.md"]
