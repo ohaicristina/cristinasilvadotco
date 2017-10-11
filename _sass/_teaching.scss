@@ -26,6 +26,10 @@ body.teaching {
         }
     }
 
+    h4 {
+        font-size: 16px;
+    }
+
     a {
         color: magenta;
         font-family: $heading-font-family;
@@ -162,7 +166,7 @@ body.teaching {
     background-color: white;
     box-shadow: 0 10px 20px rgba(240, 209, 198, 0.6);
 
-    h3.label {
+    .label {
         font-family: $mono-font-family;
     }
 
