@@ -406,6 +406,8 @@ body.teaching {
 .row {
   display: flex;
   justify-content: space-between; }
+  .row:not(:last-of-type) {
+    padding-bottom: 2em; }
 
 .col-2 {
   flex: 1; }
