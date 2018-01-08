@@ -5,23 +5,25 @@
 
     <body class="teaching">
         <div class="teaching-wrapper">
-            <ul class="navigation-list">
-                <li><a href="/5dtools" 
-                       {% if page.url == '/5dtools.html' %} class="active" {% endif %}
-                       >Syllabus
-                    </a></li>
-                <li><a href="/5dtools-schedule.html"
-                       {% if page.url == '/5dtools-schedule.html' %} class="active" {% endif %}
-                       >Schedule &amp; Assignments
-                    </a></li>
-                <li><a href="5dtools-resources.html"
-                       {% if page.url == '/5dtools-resources.html' %} class="active" {% endif %}
-                        >Resources</a></li>
-            </ul>
+            <nav class="teaching-navigation">
+                <ul class="navigation-list">
+                    <li><a href="/5dtools"
+                           {% if page.url == '/5dtools.html' %} class="active" {% endif %}
+                           >Lessons &amp; Assignments
+                        </a></li>
+                    <li><a href="/5dtools-syllabus.html"
+                           {% if page.url == '/5dtools-syllabus.html' %} class="active" {% endif %}
+                           >Syllabus
+                        </a></li>
+                    <li><a href="5dtools-resources.html"
+                           {% if page.url == '/5dtools-resources.html' %} class="active" {% endif %}
+                            >Resources</a></li>
+                </ul>
+            </nav>
 
-            <div class="teaching-container">
+            <main class="teaching-container">
                 {{ content }}
-            </div>
+            </main>
         </div>
     </body>
 </html>
