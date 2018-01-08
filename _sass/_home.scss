@@ -1,3 +1,104 @@
 body {
     background-color: #ede9e1;
+    padding: 1em;
+
+    @include media($medium-screen-up) {
+        padding: 2em;
+    }
 }
+
+main {
+    @include media($medium-screen-up) {
+        margin-left: 20%;
+        padding-left: 2em;
+        max-width: 640px;
+    }
+}
+
+.main-navigation {
+    border: $navigation-border;
+
+    @include media($medium-screen-up) {
+        border: 0;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 20%;
+        margin-top: 5em;
+        padding-left: 2em;
+    }
+
+    a {
+        color: $army-gray;
+        font-weight: 700;
+        padding-bottom: 0.15em;
+
+        &::before {
+            @include position(absolute, null null -5px 0);
+            background-color: currentColor;
+            content: "";
+            height: 2px;
+            transform: scaleX(1);
+            transition: transform $base-duration $base-timing;
+            visibility: visible;
+            width: 100%;
+        }
+
+        &:active,
+        &:focus,
+        &:hover {
+            &:before {
+                transform: scaleX(0.25) translateY(4px);
+                visibility: visible;
+            }
+        }
+
+        &.active {
+            border-bottom: 0;
+
+            &::before {
+                height: 0;
+            }
+        }
+    }
+
+    .main-navigation-list {
+        display: flex;
+        justify-content: space-around;
+
+        @include media($medium-screen-up) {
+            display: block;
+        }
+
+        li {
+            padding: 1em;
+            border-right: $navigation-border;
+            flex: 1;
+            text-align: center;
+
+            @include media($medium-screen-up) {
+                border-right: 0;
+                text-align: left;
+            }
+
+            &:last-child {
+                border-right: 0;
+            }
+        }
+    }
+}
+
+#cristina-silva {
+    margin-bottom: 0.25em;
+
+    &::after {
+        content: 'cristina silva';
+    }
+}
+
+.social-cocoon,
+.before-section {
+    margin-bottom: 2em;
+}
+

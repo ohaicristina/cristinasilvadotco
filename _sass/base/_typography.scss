@@ -12,6 +12,10 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-size: 2.6em;
+
+    @include media($medium-screen-up) {
+        font-size: 3.75em;
+    }
 }
 
 h2,
@@ -38,28 +42,12 @@ a {
   color: $action-color;
   position: relative;
   text-decoration: none;
-  transition: color $base-duration $base-timing;
+  transition: all $base-duration $base-timing;
 
   &:active,
   &:focus,
   &:hover {
     color: shade($action-color, 25%);
-
-    &:before {
-      transform: scaleX(1);
-      visibility: visible;
-    }
-  }
-
-  &:before {
-    @include position(absolute, null null -5px 0);
-    background-color: currentColor;
-    content: "";
-    height: 2px;
-    transform: scaleX(0);
-    transition: transform $base-duration $base-timing;
-    visibility: hidden;
-    width: 100%;
   }
 }
 
@@ -70,3 +58,25 @@ hr {
   border-top: 0;
   margin: $base-spacing 0;
 }
+
+.title-heading {
+    position: relative;
+
+    &::after {
+        color: $electric-red;
+        position: absolute;
+        top: 12px;
+        left: 15px;
+        letter-spacing: 0.15em;
+        opacity: 0.5;
+        z-index: -1;
+        font-size: 0.9em;
+
+        @include media($medium-screen-up) {
+            letter-spacing: 0.3em;
+            top: 22px;
+            font-size: 0.8em;
+        }
+    }
+}
+
