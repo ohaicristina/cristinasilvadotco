@@ -10,8 +10,7 @@ $large-screen-up: new-breakpoint(min-width $large-screen 8);
 // Typography
 $base-font-family: $sans-serif-font-stack, $font-stack-system;
 $mono-font-family: $mono-font-stack;
-$teaching-font-family: 'Karla', $sans-serif-font-stack, $font-stack-system;
-$heading-font-family: $mono-font-family;
+$display-font-family: $display-font-stack;
 
 // Font Sizes
 $base-font-size: 1em;
@@ -31,22 +30,16 @@ $base-border-radius: 3px;
 $base-z-index: 0;
 
 // Colors
-$blue: #4D60ff;
-$deep-blue: #28263a;
-$electric-red: #f73d79;
-$mint: #d3f9b5;
+$blue: blue;
 $darkest-gray: #101821;
 $dark-gray: #333;
 $medium-gray: #9B9B9B;
 $light-gray: #ddd;
 $white: #fff;
-$peach: #F5E1DA;
-$deep-green: #476268;
-$teal: #40A798;
 
 // Font Colors
 $base-font-color: $darkest-gray;
-$action-color: $mint;
+$action-color: $blue;
 
 // Border
 $base-border-color: $light-gray;
