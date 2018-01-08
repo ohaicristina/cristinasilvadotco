@@ -11,9 +11,31 @@ main {
     @include media($medium-screen-up) {
         margin-left: 20%;
         padding-left: 2em;
-        max-width: 640px;
+        max-width: 680px;
     }
 }
+
+nav {
+    border: $navigation-border;
+
+    @include media($medium-screen-up) {
+        border: 0;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 20%;
+        margin-top: 5em;
+        padding-left: 2em;
+    }
+
+    a {
+        color: $army-gray;
+        font-weight: 700;
+        padding-bottom: 0.15em;
+    }
+}
+
 
 .main-navigation {
     border: $navigation-border;
