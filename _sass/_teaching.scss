@@ -172,6 +172,7 @@ body.teaching {
     width: 100%;
     box-shadow: 5px 5px 0 $army-gray;
     background-color: $khaki;
+    margin-top: 0.75em;
 
     @include media($medium-screen-up) {
         ul {
