@@ -226,7 +226,11 @@ hr {
 
 .title-heading {
   position: relative;
-  color: #e1d7c6; }
+  color: #e1d7c6;
+  line-height: 1.2; }
+  @media screen and (min-width: 640px) {
+    .title-heading {
+      line-height: 1; } }
   .title-heading::after {
     color: #3a2b18;
     position: absolute;
@@ -280,7 +284,8 @@ nav {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 0; }
     @media screen and (min-width: 640px) {
       nav .navigation-list {
         display: block; } }
@@ -352,6 +357,25 @@ body.teaching .header {
 body.teaching main {
   max-width: unset; }
 
+.teaching-navigation li a {
+  display: block;
+  position: relative; }
+  .teaching-navigation li a.active {
+    transform: translateX(35px); }
+    .teaching-navigation li a.active:hover {
+      transform: translateX(35px);
+      color: #3a2b18; }
+    .teaching-navigation li a.active::before {
+      height: 2px;
+      background-color: #3a2b18;
+      width: 30px;
+      content: '';
+      position: absolute;
+      top: 11px;
+      left: -35px; }
+  .teaching-navigation li a:hover {
+    transform: translateX(10px); }
+
 #fivedtools {
   margin-bottom: 0.25em; }
   #fivedtools::after {
@@ -360,7 +384,7 @@ body.teaching main {
 #lessons-assignments {
   margin-bottom: 0.5em; }
   #lessons-assignments::after {
-    content: 'Lessons'; }
+    content: 'Lessons & Assignments'; }
 
 #resources::after {
   content: 'Resources'; }

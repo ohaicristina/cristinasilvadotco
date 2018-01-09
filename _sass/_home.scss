@@ -48,6 +48,7 @@ nav {
         justify-content: space-around;
         flex-wrap: wrap;
         align-items: center;
+        margin-bottom: 0;
 
         @include media($medium-screen-up) {
             display: block;
