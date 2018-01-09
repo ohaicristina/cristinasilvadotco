@@ -29,16 +29,38 @@ body.teaching {
     }
 }
 
-
 .class-information {
-    max-width: 760px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    border-bottom: 2px solid $dark-khaki;
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+
+    @include media($medium-screen-up) {
+        max-width: 880px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &:last-child {
+        border-bottom: 0;
+    }
+
+    > h2 {
+        width: 100%;
+    }
 }
 
 .class-information-block {
-    width: 45%;
+
+    @include media($medium-screen-up) {
+        width: 45%;
+    }
+
+    .learning-list li {
+        &::before {
+            content:'‼️';
+        }
+    }
 }
 
 .button {

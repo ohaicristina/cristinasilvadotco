@@ -130,15 +130,19 @@ dt {
 dd {
   margin: 0; }
 
+ul,
 ol {
   margin-bottom: 1em; }
+  ul li,
   ol li {
     position: relative;
     padding-bottom: 0.5em; }
+    ul li::before,
     ol li::before {
       position: absolute;
       left: -25px;
       top: 2px; }
+    ul li.week1::before,
     ol li.week1::before {
       content: '🎈'; }
 
@@ -362,13 +366,25 @@ body.teaching main {
   content: 'Resources'; }
 
 .class-information {
-  max-width: 760px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; }
+  border-bottom: 2px solid #e1d7c6;
+  margin-bottom: 2em;
+  padding-bottom: 1em; }
+  @media screen and (min-width: 640px) {
+    .class-information {
+      max-width: 880px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; } }
+  .class-information:last-child {
+    border-bottom: 0; }
+  .class-information > h2 {
+    width: 100%; }
 
-.class-information-block {
-  width: 45%; }
+@media screen and (min-width: 640px) {
+  .class-information-block {
+    width: 45%; } }
+.class-information-block .learning-list li::before {
+  content: '‼️'; }
 
 .button {
   font-weight: 700;
