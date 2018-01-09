@@ -357,24 +357,25 @@ body.teaching .header {
 body.teaching main {
   max-width: unset; }
 
-.teaching-navigation li a {
-  display: block;
-  position: relative; }
-  .teaching-navigation li a.active {
-    transform: translateX(35px); }
-    .teaching-navigation li a.active:hover {
-      transform: translateX(35px);
-      color: #3a2b18; }
-    .teaching-navigation li a.active::before {
-      height: 2px;
-      background-color: #3a2b18;
-      width: 30px;
-      content: '';
-      position: absolute;
-      top: 11px;
-      left: -35px; }
-  .teaching-navigation li a:hover {
-    transform: translateX(10px); }
+@media screen and (min-width: 640px) {
+  .teaching-navigation li a {
+    display: block;
+    position: relative; }
+    .teaching-navigation li a.active {
+      transform: translateX(35px); }
+      .teaching-navigation li a.active:hover {
+        transform: translateX(35px);
+        color: #3a2b18; }
+      .teaching-navigation li a.active::before {
+        height: 2px;
+        background-color: #3a2b18;
+        width: 30px;
+        content: '';
+        position: absolute;
+        top: 11px;
+        left: -35px; }
+    .teaching-navigation li a:hover {
+      transform: translateX(10px); } }
 
 #fivedtools {
   margin-bottom: 0.25em; }

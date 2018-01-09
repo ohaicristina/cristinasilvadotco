@@ -9,31 +9,33 @@ body.teaching {
 }
 
 .teaching-navigation{
-    li a {
-        display: block;
-        position: relative;
+    @include media($medium-screen-up) {
+        li a {
+            display: block;
+            position: relative;
 
-        &.active {
-            transform: translateX(35px);
+            &.active {
+                transform: translateX(35px);
+
+                &:hover {
+                    transform: translateX(35px);
+                    color: $army-gray;
+                }
+
+                &::before {
+                    height: 2px;
+                    background-color: $army-gray;
+                    width: 30px;
+                    content: '';
+                    position: absolute;
+                    top: 11px;
+                    left: -35px;
+                }
+            }
 
             &:hover {
-                transform: translateX(35px);
-                color: $army-gray;
+                transform: translateX(10px);
             }
-
-            &::before {
-                height: 2px;
-                background-color: $army-gray;
-                width: 30px;
-                content: '';
-                position: absolute;
-                top: 11px;
-                left: -35px;
-            }
-        }
-
-        &:hover {
-            transform: translateX(10px);
         }
     }
 }
