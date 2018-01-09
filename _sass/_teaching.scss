@@ -1,0 +1,167 @@
+body.teaching {
+    .header {
+        margin-bottom: 2em;
+    }
+
+    main {
+        max-width: unset;
+    }
+}
+#fivedtools {
+    margin-bottom: 0.25em;
+
+    &::after {
+        content: '5D Tools - ARTF2224';
+    }
+}
+
+#lessons-assignments {
+    margin-bottom: 0.5em;
+
+    &::after {
+        content: 'Lessons';
+    }
+}
+
+#resources {
+    &::after {
+        content: 'Resources';
+    }
+}
+
+
+.class-information {
+    max-width: 760px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.class-information-block {
+    width: 45%;
+}
+
+.button {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    border: 2px solid $electric-red;
+    padding: 0.5em;
+    background-color: $khaki;
+    position: relative;
+    display: inline-block;
+    transform-style: preserve-3d;
+
+    &::before {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        top: 5px;
+        left: 5px;
+        content: '';
+        background-color: $army-gray;
+        transform: translateZ(-1em);
+        transition: transform 0.2s ease;
+    }
+
+    &:hover {
+        color: $electric-red;
+        transform: translate(5px, 5px);
+
+        &::before {
+            transform: translate(-5px, -5px) translateZ(-1em);
+        }
+    }
+}
+
+.week-card {
+    margin-bottom: 2em;
+}
+
+.due-date {
+    padding-top: 0.5em;
+    font-size: 0.9em;
+    font-weight: 700;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.week {
+    border-bottom: 2px solid $dark-khaki;
+
+    &:last-child {
+        border-bottom: 0;
+    }
+
+    @include media($medium-screen-up) {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 780px;
+
+        h2 {
+            margin-bottom: 1em;
+            width: 100%;
+        }
+
+        .week-card {
+            flex: 1 0 45%;
+        }
+    }
+}
+
+.resources {
+    padding: 1em;
+    border: $navigation-border;
+    text-align: center;
+    width: 100%;
+    box-shadow: 5px 5px 0 $army-gray;
+    background-color: $khaki;
+
+    @include media($medium-screen-up) {
+        ul {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            li {
+                font-weight: 700;
+                border-bottom: 2px solid $electric-red;
+                padding-bottom: 0.25em;
+                margin: 0.25em 0.5em 0;
+            }
+        }
+    }
+}
+
+.resource-category {
+    margin-bottom: 2em;
+
+    @include media($medium-screen-up) {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        h2 {
+            width: 100%;
+        }
+    }
+}
+
+.resource-card {
+    border: $navigation-border;
+    padding: 1em;
+    margin-bottom: 1em;
+    box-shadow: 5px 5px 0 $army-gray;
+    background-color: $khaki;
+
+    p {
+        margin-bottom: 0;
+    }
+
+    @include media($medium-screen-up) {
+        flex: 1 0 30%;
+        margin: 1em;
+    }
+}
+

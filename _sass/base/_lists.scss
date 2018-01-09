@@ -17,3 +17,22 @@ dt {
 dd {
   margin: 0;
 }
+
+ol {
+    margin-bottom: 1em;
+
+    li {
+        position: relative;
+        padding-bottom: 0.5em;
+
+        &::before {
+            position: absolute;
+            left: -25px;
+            top: 2px;
+        }
+
+        &.week1::before {
+            content:'🎈';
+        }
+    }
+}

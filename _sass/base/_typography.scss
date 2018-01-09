@@ -14,7 +14,7 @@ h1 {
     font-size: 2.6em;
 
     @include media($medium-screen-up) {
-        font-size: 3.75em;
+        font-size: 5em;
     }
 }
 
@@ -61,21 +61,21 @@ hr {
 
 .title-heading {
     position: relative;
+    color: $dark-khaki;
 
     &::after {
-        color: $electric-red;
+        color: $army-gray;
         position: absolute;
         top: 12px;
         left: 15px;
         letter-spacing: 0.15em;
-        opacity: 0.5;
-        z-index: -1;
         font-size: 0.9em;
 
         @include media($medium-screen-up) {
-            letter-spacing: 0.3em;
-            top: 22px;
-            font-size: 0.8em;
+            top: 50px;
+            left: 50px;
+            letter-spacing: 0.1em;
+            font-size: 0.35em;
         }
     }
 }
