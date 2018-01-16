@@ -35,5 +35,14 @@ ol {
         &.week1::before {
             content:'🎈';
         }
+        &.week2::before {
+            content: '🌶';
+        }
     }
+}
+
+.assignment-list {
+    font-size: 0.9em;
+    margin-left: 1em;
+    list-style-type: circle;
 }

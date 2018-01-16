@@ -144,9 +144,11 @@ body.teaching {
 
 .week {
     border-bottom: 2px solid $dark-khaki;
+    margin-bottom: 2.5em;
 
     &:last-child {
         border-bottom: 0;
+        margin-bottom: 0;
     }
 
     @include media($medium-screen-up) {
@@ -173,6 +175,7 @@ body.teaching {
     box-shadow: 5px 5px 0 $army-gray;
     background-color: $khaki;
     margin-top: 0.75em;
+    margin-bottom: 3em;
 
     @include media($medium-screen-up) {
         ul {
