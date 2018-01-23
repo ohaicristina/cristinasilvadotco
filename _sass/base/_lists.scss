@@ -38,6 +38,9 @@ ol {
         &.week2::before {
             content: '🌶';
         }
+        &.week3::before {
+            content: '🎯';
+        }
     }
 }
 
