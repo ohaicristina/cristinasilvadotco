@@ -474,7 +474,8 @@ body.teaching main {
         margin-bottom: 1em;
         width: 100%; }
       .week .week-card {
-        flex: 1 0 45%; } }
+        flex: 1 0 45%;
+        margin-right: 1em; } }
 
 .resources {
   padding: 1em;
