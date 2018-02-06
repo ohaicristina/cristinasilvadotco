@@ -151,6 +151,9 @@ ol {
     ul li.week3::before,
     ol li.week3::before {
       content: '🎯'; }
+    ul li.week5::before,
+    ol li.week5::before {
+      content: '🍓'; }
 
 .assignment-list {
   font-size: 0.9em;
