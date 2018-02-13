@@ -154,6 +154,9 @@ ol {
     ul li.week5::before,
     ol li.week5::before {
       content: '🍓'; }
+    ul li.week6::before,
+    ol li.week6::before {
+      content: '❣️'; }
 
 .assignment-list {
   font-size: 0.9em;
@@ -522,3 +525,6 @@ body.teaching main {
     .resource-card {
       flex: 1 0 30%;
       margin: 1em; } }
+
+.assignment-list {
+  font-size: 0.9em; }
