@@ -157,6 +157,9 @@ ol {
     ul li.week6::before,
     ol li.week6::before {
       content: '❣️'; }
+    ul li.week7::before,
+    ol li.week7::before {
+      content: '🎒'; }
 
 .assignment-list {
   font-size: 0.9em;
