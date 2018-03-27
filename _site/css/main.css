@@ -163,6 +163,9 @@ ol {
     ul li.week9::before,
     ol li.week9::before {
       content: '💥'; }
+    ul li.week10::before,
+    ol li.week10::before {
+      content: '♨️'; }
 
 .assignment-list {
   font-size: 0.9em;
@@ -506,8 +509,8 @@ body.teaching main {
       .resources ul li {
         font-weight: 700;
         border-bottom: 2px solid #fe2828;
-        padding-bottom: 0.25em;
-        margin: 0.25em 0.5em 0; } }
+        padding-bottom: 0.2em;
+        margin: 0.5em 0.5em 0; } }
 
 .resource-category {
   margin-bottom: 2em; }
