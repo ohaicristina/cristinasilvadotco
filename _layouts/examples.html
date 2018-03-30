@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+    {% include examples-head.html %}
+
+    <body class="examples">
+        <div class="examples-wrapper">
+            <nav class="examples-navigation">
+                <ul class="navigation-list">
+                    <li><a href="/5dtools"
+                           {% if page.url == '/5dtools.html' %} class="active" {% endif %}
+                           >5D Tools</a></li>
+                    <li><a href="/5dtools-syllabus.html"
+                           {% if page.url == '/examples/index.html' %} class="active" {% endif %}
+                           >Code Examples
+                        </a></li>
+                </ul>
+            </nav>
+
+            <main class="examples-container">
+                {{ content }}
+            </main>
+        </div>
+    </body>
+</html>
+
