@@ -169,6 +169,9 @@ ol {
     ul li.week11::before,
     ol li.week11::before {
       content: '🦑'; }
+    ul li.week12::before,
+    ol li.week12::before {
+      content: '🥊'; }
 
 .assignment-list {
   font-size: 0.9em;
